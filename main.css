@@ -30,10 +30,16 @@ a{
     text-decoration: none;
 }
 
-a::after{
-    color: var(--normal);
-    text-decoration: none;
-}
+/* Normal and Visited State */
+a:link, a:visited {
+    color: var(--visited);
+    text-decoration: none; 
+  }
+  
+
+  a:active {
+    color: var(--normal); 
+  }
 
 a:hover{
     color: var(--hoverLink);
